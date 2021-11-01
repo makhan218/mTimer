@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Apercu-Light.otf">
+            <string>Apercu-Light</string>
+        </array>
+        <array key="Apercu-Regular.otf">
+            <string>Apercu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KGk-i7-Jjw" customClass="SettingsDefaultTableCell" customModule="MCounter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rio-gS-mRY" userLabel="seprator">
+                        <rect key="frame" x="16" y="158.5" width="316" height="0.5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="6lj-gm-1v6"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57v-dW-Bcb">
+                        <rect key="frame" x="16" y="11" width="54" height="137"/>
+                        <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jd3-7e-zHo">
+                        <rect key="frame" x="248" y="64.5" width="62" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="0aC-qp-hXY"/>
+                            <constraint firstAttribute="width" constant="60" id="9hL-Hn-ega"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="onTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEQ-6s-4aF">
+                        <rect key="frame" x="259" y="69.5" width="41" height="20"/>
+                        <fontDescription key="fontDescription" name="Apercu-Light" family="Apercu" pointSize="17"/>
+                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ec-nz-ePI" userLabel="Streak Label">
+                        <rect key="frame" x="16" y="150" width="37" height="18"/>
+                        <fontDescription key="fontDescription" name="Apercu-Regular" family="Apercu" pointSize="15"/>
+                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="57v-dW-Bcb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="BeQ-ll-VWm"/>
+                    <constraint firstItem="Jd3-7e-zHo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Fkc-RM-fHV"/>
+                    <constraint firstItem="Rio-gS-mRY" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="TY3-yZ-kke"/>
+                    <constraint firstItem="4ec-nz-ePI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WWJ-CS-9cj"/>
+                    <constraint firstItem="4ec-nz-ePI" firstAttribute="top" secondItem="57v-dW-Bcb" secondAttribute="bottom" constant="2" id="bUw-lN-53x"/>
+                    <constraint firstItem="EEQ-6s-4aF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ef0-jR-RBG"/>
+                    <constraint firstAttribute="bottom" secondItem="57v-dW-Bcb" secondAttribute="bottom" constant="11" id="flH-NP-SkM"/>
+                    <constraint firstAttribute="trailing" secondItem="Jd3-7e-zHo" secondAttribute="trailing" constant="8" id="hkQ-LJ-7t5"/>
+                    <constraint firstAttribute="trailing" secondItem="EEQ-6s-4aF" secondAttribute="trailing" constant="16" id="qaz-8Z-AuD"/>
+                    <constraint firstItem="57v-dW-Bcb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="wYa-7Y-koQ"/>
+                    <constraint firstAttribute="bottom" secondItem="Rio-gS-mRY" secondAttribute="bottom" id="yfN-zZ-YNy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="Rio-gS-mRY" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="16" id="SLb-WF-vEw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="flH-NP-SkM" id="9QI-rc-nHa"/>
+                <outlet property="leftLabel" destination="57v-dW-Bcb" id="nNM-bb-Ohq"/>
+                <outlet property="selectedDataLabel" destination="EEQ-6s-4aF" id="Q9c-iE-RsJ"/>
+                <outlet property="seprator" destination="Rio-gS-mRY" id="FXH-VB-EbB"/>
+                <outlet property="sepratorLeadingConstraint" destination="SLb-WF-vEw" id="q1T-Io-wfj"/>
+                <outlet property="streakLabel" destination="4ec-nz-ePI" id="31Q-op-Bsp"/>
+                <outlet property="switchOutlet" destination="Jd3-7e-zHo" id="sJ3-W9-XBi"/>
+                <outlet property="topConstraint" destination="wYa-7Y-koQ" id="5sQ-c5-DEd"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="117.52232142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

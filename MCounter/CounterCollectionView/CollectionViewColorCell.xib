@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewColorCell" customModule="MCounter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDX-OB-sKg" customClass="SemiCirleView" customModule="MCounter" customModuleProvider="target">
+                        <rect key="frame" x="61.5" y="66" width="36" height="36"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="TxE-XG-uo9"/>
+                            <constraint firstAttribute="width" constant="36" id="tFu-Jy-GCM"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofV-ZY-Mzi" customClass="SemiCirleView" customModule="MCounter" customModuleProvider="target">
+                        <rect key="frame" x="61.5" y="66" width="36" height="36"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="Lql-pF-KiV"/>
+                            <constraint firstAttribute="height" constant="36" id="juu-hc-nfF"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ba4-IL-gfL">
+                        <rect key="frame" x="55.5" y="60" width="48" height="48"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="ncM-P4-H84"/>
+                            <constraint firstAttribute="height" constant="48" id="vmz-sY-N2J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bDX-OB-sKg" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="0mX-63-HhN"/>
+                <constraint firstItem="bDX-OB-sKg" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="8Bp-hL-cKO"/>
+                <constraint firstItem="Ba4-IL-gfL" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="JUi-E8-cgo"/>
+                <constraint firstItem="ofV-ZY-Mzi" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="SXv-i2-Fog"/>
+                <constraint firstItem="ofV-ZY-Mzi" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="k4z-hl-tZW"/>
+                <constraint firstItem="Ba4-IL-gfL" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="yj5-SZ-qfi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="159" height="124"/>
+            <connections>
+                <outlet property="bottomSemiCircle" destination="ofV-ZY-Mzi" id="i9g-gm-xu3"/>
+                <outlet property="centerCircle" destination="bDX-OB-sKg" id="xyD-3I-aJS"/>
+                <outlet property="selectionView" destination="Ba4-IL-gfL" id="hOx-2F-WCL"/>
+            </connections>
+            <point key="canvasLocation" x="216.66666666666669" y="130.58035714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCounterCell" id="gTV-IL-0wX" customClass="CollectionViewCounterCell" customModule="MCounter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="79" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="79" height="51"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyQ-bB-SRs" customClass="CircleTimer" customModule="MCounter" customModuleProvider="target">
+                        <rect key="frame" x="33.5" y="19.5" width="12" height="12"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="cyQ-bB-SRs" secondAttribute="height" multiplier="1:1" id="fsS-4X-UzY"/>
+                            <constraint firstAttribute="height" constant="12" id="qfP-kY-yXX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="cyQ-bB-SRs" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Lba-hp-vjR"/>
+                <constraint firstItem="cyQ-bB-SRs" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="zne-ui-jDj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="79" height="51"/>
+            <connections>
+                <outlet property="centerCircle" destination="cyQ-bB-SRs" id="W9Q-uq-FmA"/>
+                <outlet property="heightConstraint" destination="qfP-kY-yXX" id="aHE-l8-6Y5"/>
+            </connections>
+            <point key="canvasLocation" x="160.80000000000001" y="185.75712143928038"/>
+        </collectionViewCell>
+    </objects>
+</document>

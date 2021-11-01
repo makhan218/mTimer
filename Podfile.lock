@@ -1,0 +1,44 @@
+PODS:
+  - Bugsnag (5.23.0)
+  - FSCalendar (2.8.1)
+  - JGProgressHUD (2.1)
+  - mailcore2-ios (0.6.4)
+  - Mute (0.5.0)
+  - PickerView (0.4.0)
+  - SwiftDate (5.1.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Bugsnag
+  - FSCalendar
+  - JGProgressHUD
+  - mailcore2-ios
+  - Mute
+  - PickerView
+  - SwiftDate (~> 5.0)
+  - Toast-Swift (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Bugsnag
+    - FSCalendar
+    - JGProgressHUD
+    - mailcore2-ios
+    - Mute
+    - PickerView
+    - SwiftDate
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Bugsnag: 1f33ee5b55bc4b131a30e0fe6db714da9c6609f6
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  mailcore2-ios: 3ff0be2fa553d4da9c11d39c11d51863c768f24f
+  Mute: 46611fa67c154b4862eb7da33a53bb713adc8b9b
+  PickerView: a736ea986d992aa3ef32423f475fdf3f3a0cf7d4
+  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 69bcf38cd8bba36810359079dfc3ee8234d327ef
+
+COCOAPODS: 1.8.4
